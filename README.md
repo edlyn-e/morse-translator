@@ -2,7 +2,7 @@
 
 ### Overview
 
-Project: Morse Code Translator aims to create an application that translates between English and Morse Code. For this project, the goal is to create a functional translator that is capable of translating English text into Morse Code with proper formatting (i.e. one space between each character and separation of words represented by a slash (/) or a pipe ( | ) as per the guidelines <a href = "https://morsecode.world/international/translator.html" >here</a>.The aim of this project is to apply learned and accumulated knowledge and further build upon my understanding of JavaScript fundamentals.
+Project: Morse Code Translator aims to create an application that translates between English and Morse Code. For this project, the goal is to create a functional translator that is capable of translating English text into Morse Code with proper formatting (i.e. one space between each character and separation of words represented by a slash (/) or a pipe ( | ) as per the guidelines <a href = "https://morsecode.world/international/translator.html" >here</a>. The aim of this project is to apply learned and accumulated knowledge and further build upon my understanding of JavaScript fundamentals.
 
 ### Goals
 
