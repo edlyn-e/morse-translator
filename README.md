@@ -47,4 +47,8 @@ In this section, I break down the project into smaller and manageable tasks to e
 
 ### Extras
 
+- Add numbers and punctuation into the Morse Code/Eng directory
+
+### Extras that *actually* extras
+
 -   Animated typing for the translated text
