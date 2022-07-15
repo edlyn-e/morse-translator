@@ -23,23 +23,25 @@ Project: Morse Code Translator aims to create an application that translates bet
 In this section, I break down the project into smaller and manageable tasks to establish metrics to measure my progress on this project.
 
 ### HTML & CSS
-- Establish areas for DOM elements 
-- User-friendly interface 
-- Clear button to reset input text-area
-- Submit/OK/Translate button to translate input text  
-- Toggle to switch between the language
-  
+
+-   Establish areas for DOM elements
+-   User-friendly interface
+-   Clear button to reset input text-area
+-   Submit/OK/Translate button to translate input text
+-   Toggle to switch between the language
+-   Written instructions on how to use the Translator
+
 ### JavaScript
-- Function to translate text English to Morse Code and vice versa 
-- Handles spaces: 
-  - 1 for each word in English 
-  - 1 for each character in Morse Code
-    - / or | as space between words 
-- Toggle function to switch between language input 
-  - English to Morse Code
-  - Morse Code to English
 
-### Extras 
-- Animated typing for the translated text
+-   Function to translate text English to Morse Code and vice versa
+-   Handles spaces:
+    -   1 for each word in English
+    -   1 for each character in Morse Code
+        -   / or | as space between words
+-   Toggle function to switch between language input
+    -   English to Morse Code
+    -   Morse Code to English
 
+### Extras
 
+-   Animated typing for the translated text
