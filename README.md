@@ -20,7 +20,10 @@ Project: Morse Code Translator aims to create an application that translates bet
 
 ## The to-do list plan
 
-In this section, I break down the project into smaller and manageable tasks to establish metrics to measure my progress on this project.
+In this section, I break down the project into smaller and manageable tasks to establish metrics to measure my progress on this project. I have also sketched out some ideas to help flesh out the process a little more.
+
+![Morse Code Translator ](https://user-images.githubusercontent.com/107823538/179179336-f630fc9f-7bea-4832-8360-e2d4553c1bc5.png)
+
 
 ### HTML & CSS
 
