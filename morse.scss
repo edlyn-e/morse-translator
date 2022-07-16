@@ -1,10 +1,25 @@
+@use "palette";
+
 $border: 1px solid black;
 $border2: 1px solid blue;
 $border3: 1px solid red;
 $border4: 1px solid green;
 
+@mixin border-radius {
+    border-radius: 15px;
+}
+
+@mixin button-base {
+    border: none;
+    border-radius: 50%;
+    align-self: center;
+    height: 11vh;
+    width: 11vh;
+}
+
 * {
     font-family: "Cutive Mono", monospace;
+    font-weight: bolder;
 }
 
 body {
@@ -14,79 +29,117 @@ body {
     align-items: center;
     flex-wrap: wrap;
     margin-top: 5vh;
-
-    border: $border3;
 }
 .welcome-note {
     border: $border;
 
     width: 40vh;
-    margin: 0vh;
+    margin: 2vh;
     padding: 2vh;
 }
 
 .translator {
-    border: $border;
-
-    margin-right: 2vh;
-
-    display: flex;
     flex-direction: column;
     align-self: center;
-    justify-self: center;
+    justify-content: center;
+    margin: 2vh;
+    padding: 1vh;
 
-    height: 60vh;
+    height: 70vh;
     width: 75vh;
 
-    &__header {
-        border: $border2;
-        display: flex;
+    background-color: palette.$translator-body;
+    box-shadow: 0.75vh 1vh palette.$translator-body-shadow;
+    @include border-radius;
 
+    .reset {
+        display: flex;
+        justify-content: flex-end;
+        margin: 1vh 1vh 0vh auto;
+        padding: 1vh;
+    }
+
+    &__header {
         .title {
-            margin: 3vh auto 2vh 18vh;
+            margin: auto;
+            text-align: center;
+            padding: 4vh 0vh 0vh 0vh;
         }
 
         .switch {
-            border: $border3;
-            align-self: flex-end;
             padding: 0vh 2vh 0vh 0vh;
+            margin: 0vh 0vh 2vh 0vh;
+            display: flex;
+            justify-content: flex-end;
         }
     }
 
     &__screen {
-        border: $border3;
-        height: 25vh;
-        margin: 2vh;
+        height: 30vh;
+        width: 65vh;
+        margin: auto;
+        padding: 2vh;
+        resize: none;
+        display: block;
+
+        overflow-x: wrap;
+        overflow-y: hidden;
+
+        background-color: palette.$screen;
+        box-shadow: inset 3px 3px palette.$shadow;
+
+        @include border-radius;
 
         p {
-            padding: 1vh;
+            padding: 2vh;
         }
     }
 
     &__bottom-half {
-        border: $border4;
         display: flex;
 
         justify-content: space-around;
-        margin: 0 auto;
+        margin: 2.5vh auto;
 
         width: 71vh;
 
-        button {
-            height: 9vh;
-            width: 9vh;
-            border-radius: 50%;
+        .clear-button {
+            @include button-base();
+            background-color: palette.$clear;
+            box-shadow: 0.25vh 1vh palette.$clear-shadow;
+        }
 
-            align-self: center;
+        .clear-button:hover {
+            background-color: palette.$clear-hover;
+        }
+
+        .clear-button:active {
+            background-color: palette.$clear-active;
+            box-shadow: inset 0.25vh 0.85vh palette.$clear-shadow;
+        }
+
+        .submit-button {
+            @include button-base();
+            background-color: palette.$submit;
+            box-shadow: 0.25vh 1vh palette.$submit-shadow;
+        }
+
+        .submit-button:hover {
+            background-color: palette.$submit-hover;
+        }
+
+        .submit-button:active {
+            background-color: palette.$submit-active;
+            box-shadow: inset 0.25vh 0.85vh palette.$submit-shadow;
         }
 
         &--textarea {
-            border: $border;
+            box-shadow: inset 2px 2px palette.$shadow;
             border-radius: 1vh;
 
             padding: 1vh;
             height: 12vh;
-            width: 47vh;
+            width: 42vh;
 
             resize: none;
         }

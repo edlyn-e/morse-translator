@@ -22,6 +22,8 @@
             </p>
         </section>
         <main class="translator">
+            <!-- <button class="reset" id="reset">RESET</button> -->
+
             <div class="translator__header">
                 <h1 class="translator__header title">MORSE TRANSLATOR</h1>
                 <label class="switch">
@@ -29,21 +31,28 @@
                     <span class="slider round"></span>
                 </label>
             </div>
-            <div class="translator__screen">
-                <p>Translated text goes here...</p>
-            </div>
+
+            <textarea
+                class="translator__screen"
+                id="output"
+                placeholder="your translation will appear here"
+                disabled
+            ></textarea>
+
             <div class="translator__bottom-half">
-                <button id="clear">CLEAR</button>
+                <button class="clear-button" id="clear">CLEAR</button>
 
                 <textarea
                     type="text"
                     id="input"
                     placeholder="input language here"
                     class="translator__bottom-half--textarea"
+                    required
                 ></textarea>
 
-                <button id="okay">GO</button>
+                <button class="submit-button" id="okay">GO</button>
             </div>
         </main>
     </body>
+    <script src="morse.js" type="module"></script>
 </html>
