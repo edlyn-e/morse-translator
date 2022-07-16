@@ -2,7 +2,7 @@
 
 ### Overview
 
-Project: Morse Code Translator aims to create an application that translates between English and Morse Code. For this project, the goal is to create a functional translator that is capable of translating English text into Morse Code with proper formatting (i.e. one space between each character and separation of words represented by a slash (/) or a pipe ( | ) as per the guidelines <a href = "https://morsecode.world/international/translator.html" >here</a>.The aim of this project is to apply learned and accumulated knowledge and further build upon my understanding of JavaScript fundamentals.
+Project: Morse Code Translator aims to create an application that translates between English and Morse Code. For this project, the goal is to create a functional translator that is capable of translating English text into Morse Code with proper formatting (i.e. one space between each character and separation of words represented by a slash (/) or a pipe ( | ) as per the guidelines <a href = "https://morsecode.world/international/translator.html" >here</a>. The aim of this project is to apply learned and accumulated knowledge and further build upon my understanding of JavaScript fundamentals.
 
 ### Goals
 
@@ -20,7 +20,11 @@ Project: Morse Code Translator aims to create an application that translates bet
 
 ## The to-do list plan
 
-In this section, I break down the project into smaller and manageable tasks to establish metrics to measure my progress on this project.
+In this section, I break down the project into smaller and manageable tasks to establish metrics to measure my progress on this project. I have also sketched out some ideas to help flesh out the process a little more. This project does not require recreating an image, instead, it affords creative freedom to conjure a design based on my own vision. For this project, I was inspired by an 'Etch a Sketch' and a fun "Gameboy" feel. I sketched some designs (shown below) with some experimental layouts and design elements.
+
+![Morse Code Ideation](https://user-images.githubusercontent.com/107823538/179229511-498580fd-f0d9-48e4-a9e7-29ebb78c232a.png)
+
+Experimenting lightly with some primary and secondary colours, I aim to create a vibrant and fun application to translate Morse Code and English entries to English and Morse Code respectively.
 
 ### HTML & CSS
 
@@ -41,7 +45,15 @@ In this section, I break down the project into smaller and manageable tasks to e
 -   Toggle function to switch between language input
     -   English to Morse Code
     -   Morse Code to English
+-   Function to reset the entire display both input and display
+-   Function to clear the input
 
 ### Extras
 
+-   Add numbers and punctuation into the Morse Code/Eng directory
+-   Alert to notify the user if user is trying to translate an empty input
+
+### Extras that _actually_ extras
+
 -   Animated typing for the translated text
+-   QWERTY keyboard input on the screen to further add to the "toy" appearance
