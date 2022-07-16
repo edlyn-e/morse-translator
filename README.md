@@ -52,6 +52,7 @@ Experimenting lightly with some primary and secondary colours, I aim to create a
 ### Extras
 
 - Add numbers and punctuation into the Morse Code/Eng directory
+- Alert to notify the user if user is trying to translate an empty input
 
 ### Extras that *actually* extras
 
