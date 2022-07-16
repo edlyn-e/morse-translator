@@ -1,12 +1,23 @@
-$submit-hover: #65cd81;
-$submit: #3cb95d;
-$submit-active: #329a4e;
-$submit-shadow: #236c36;
+// CLEAR button styling
 $clear-hover: #f2cb92;
 $clear: #eaae52;
 $clear-active: #e59824;
 $clear-shadow: #c98218;
-$outline: #114f69;
+
+// ENG to MORSE styling
+$EM-text: #e0f5e6;
+$EM-hover: #65cd81;
+$EM: #3cb95d;
+$EM-active: #329a4e;
+$EM-shadow: #236c36;
+
+// MORSE to ENG styling
+$ME-text: #dcf1f9;
+$ME-hover: #17698c;
+$ME: #114f69;
+$ME-active: #0e4258;
+$ME-shadow: #092735;
+// BODY styling
 $translator-body: #ca4833;
 $translator-body-shadow: #a33929;
 $screen: #f2f8f6;

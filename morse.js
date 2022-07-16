@@ -1,20 +1,27 @@
 import { morseCode, alphabet, engToMorse, morseToEng } from "./morse-2.js";
 
 // Accessing the DOM
-const translatorScreen = document.querySelector(".translator__screen");
-const resetButton = document.querySelector(".reset");
+
 const clearButton = document.querySelector("#clear");
 const inputText = document.querySelector("#input");
-const okButton = document.querySelector("#okay");
-const toggleSwitch = document.querySelector(".switch");
+const engToMor = document.querySelector("#engToMorse");
+const morToEng = document.querySelector("#morseToEng");
 
-// translates from Eng to Morse Code
-okButton.addEventListener("click", () => {
+engToMor.addEventListener("click", () => {
     if (inputText === "") {
         return alert("Oops! Did you want to translate something?");
     }
     const input = inputText.value;
     const output = engToMorse(input);
+    document.getElementById("output").value = output;
+});
+
+morToEng.addEventListener("click", () => {
+    if (inputText === "") {
+        return alert("Oops! Did you want to translate something?");
+    }
+    const input = inputText.value;
+    const output = morseToEng(input);
     document.getElementById("output").value = output;
 });
 

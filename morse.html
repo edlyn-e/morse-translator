@@ -7,27 +7,35 @@
         <title>Morse E-translator</title>
         <link rel="stylesheet" href="morse.css" />
         <link
-            href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap"
             rel="stylesheet"
         />
+        <script
+            src="https://kit.fontawesome.com/78a04382fc.js"
+            crossorigin="anonymous"
+        ></script>
     </head>
     <body>
         <section class="welcome-note">
+            <p><i class="fa-solid fa-person-chalkboard fa-2x"></i></p>
+
             <p>Welcome to the Morse Code Translator.</p>
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
-                perferendis blanditiis a, quis tenetur velit cum at laborum
-                adipisci quibusdam, sit amet consequuntur veritatis, provident
-                est quisquam magnam enim neque.
+                To start, start typing in the input screen on the bottom half of
+                the translator. Then, once you're ready to encrypt your English
+                text into Morse Code, hit the green button!
             </p>
+            <p>
+                If you'd like to decrypt Morse Code, pop it into the input
+                screen - remembering to use a pipe " | " to let the translator
+                know of spaces between words - and, once you're ready, hit the
+                blue button!
+            </p>
+            <p>Simple, right? Happy translating!</p>
         </section>
         <main class="translator">
             <div class="translator__header">
                 <h1 class="translator__header title">MORSE TRANSLATOR</h1>
-                <label class="switch">
-                    <input type="checkbox" />
-                    <span class="slider round"></span>
-                </label>
             </div>
 
             <textarea
@@ -47,8 +55,15 @@
                     class="translator__bottom-half--textarea"
                     required
                 ></textarea>
+                <div class="translator__submit">
+                    <button class="submit-button" id="engToMorse">
+                        ENG - MOR
+                    </button>
 
-                <button class="submit-button" id="okay">GO</button>
+                    <button class="submit-button" id="morseToEng">
+                        MOR - ENG
+                    </button>
+                </div>
             </div>
         </main>
     </body>
