@@ -64,7 +64,7 @@ export const engToMorse = (engString) => {
             if (morseCode[letter]) {
                 return morseCode[letter];
             } else {
-                return letter;
+                return;
             }
         })
         .join(" ");
@@ -77,7 +77,7 @@ export const morseToEng = (morseString) => {
             if (alphabet[character]) {
                 return alphabet[character];
             } else {
-                return character;
+                return;
             }
         })
         .join("")
