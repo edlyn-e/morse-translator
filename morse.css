@@ -102,42 +102,33 @@ body {
   display: flex;
   flex-direction: column;
 }
-.translator__submit #engToMorse {
-  color: #e0f5e6;
+.translator__submit .submit-button {
   border: none;
-  border-radius: 12px;
-  height: 5vh;
+  border-radius: 50%;
+  align-self: center;
+  height: 11vh;
   width: 11vh;
   margin: 1vh;
   background-color: #3cb95d;
   box-shadow: 0.25vh 1vh #236c36;
 }
-.translator__submit #engToMorse:hover {
+.translator__submit .submit-button:hover {
+  border: none;
+  border-radius: 50%;
+  align-self: center;
+  height: 11vh;
+  width: 11vh;
+  margin: 1vh;
   background-color: #65cd81;
+  box-shadow: 0.25vh 1vh #236c36;
 }
-.translator__submit #engToMorse:active {
+.translator__submit .submit-button:active {
+  border: none;
+  border-radius: 50%;
+  align-self: center;
+  height: 11vh;
+  width: 11vh;
+  margin: 1vh;
   background-color: #329a4e;
-  box-shadow: inset 0.25vh 0.85vh #236c36;
-}
-.translator__submit #morseToEng {
-  color: #dcf1f9;
-  border: none;
-  border-radius: 12px;
-  height: 5vh;
-  width: 11vh;
-  margin: 1vh;
-  background-color: #114f69;
-  box-shadow: 0.25vh 1vh #092735;
-}
-.translator__submit #morseToEng:hover {
-  border: none;
-  border-radius: 12px;
-  height: 5vh;
-  width: 11vh;
-  margin: 1vh;
-  background-color: #17698c;
-}
-.translator__submit #morseToEng:active {
-  background-color: #0e4258;
-  box-shadow: inset 0.25vh 0.85vh #092735;
+  box-shadow: inset 0.25vh 1vh #236c36;
 }

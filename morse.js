@@ -4,26 +4,28 @@ import { morseCode, alphabet, engToMorse, morseToEng } from "./morse-2.js";
 
 const clearButton = document.querySelector("#clear");
 const inputText = document.querySelector("#input");
-const engToMor = document.querySelector("#engToMorse");
-const morToEng = document.querySelector("#morseToEng");
+const submitButton = document.querySelector(".submit-button");
+const variableSwitch = document.querySelector(".checkbox");
 
-engToMor.addEventListener("click", () => {
-    if (inputText === "") {
+function onTranslateClick(callback) {
+    if (inputText.value === "") {
         return alert("Oops! Did you want to translate something?");
     }
-    const input = inputText.value;
-    const output = engToMorse(input);
-    document.getElementById("output").value = output;
-});
 
-morToEng.addEventListener("click", () => {
-    if (inputText === "") {
-        return alert("Oops! Did you want to translate something?");
-    }
     const input = inputText.value;
-    const output = morseToEng(input);
-    document.getElementById("output").value = output;
-});
+    try {
+        const output = callback(input);
+        document.getElementById("output").value = output;
+    } catch (e) {
+        document.getElementById("output").value - e.message;
+    }
+}
+
+submitButton.addEventListener("click", (e) =>
+    variableSwitch
+        ? onTranslateClick(engToMorse)
+        : onTranslateClick(morseToEng),
+);
 
 // clears entries on both screens
 clearButton.addEventListener("click", () => {

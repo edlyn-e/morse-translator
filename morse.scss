@@ -13,14 +13,6 @@
     margin: 1vh;
 }
 
-@mixin translate-btn {
-    border: none;
-    border-radius: 12px;
-    height: 5vh;
-    width: 11vh;
-    margin: 1vh;
-}
-
 * {
     font-family: "Syne Mono", monospace;
     font-weight: bolder;
@@ -140,37 +132,21 @@ body {
         display: flex;
         flex-direction: column;
 
-        #engToMorse {
-            color: palette.$EM-text;
-            @include translate-btn();
-            background-color: palette.$EM;
-            box-shadow: 0.25vh 1vh palette.$EM-shadow;
+        .submit-button {
+            @include button-base;
+            background-color: palette.$submit;
+            box-shadow: 0.25vh 1vh palette.$submit-shadow;
         }
 
-        #engToMorse:hover {
-            background-color: palette.$EM-hover;
+        .submit-button:hover {
+            @include button-base;
+            background-color: palette.$submit-hover;
+            box-shadow: 0.25vh 1vh palette.$submit-shadow;
         }
-
-        #engToMorse:active {
-            background-color: palette.$EM-active;
-            box-shadow: inset 0.25vh 0.85vh palette.$EM-shadow;
-        }
-
-        #morseToEng {
-            color: palette.$ME-text;
-            @include translate-btn();
-            background-color: palette.$ME;
-            box-shadow: 0.25vh 1vh palette.$ME-shadow;
-        }
-
-        #morseToEng:hover {
-            @include translate-btn();
-            background-color: palette.$ME-hover;
-        }
-
-        #morseToEng:active {
-            background-color: palette.$ME-active;
-            box-shadow: inset 0.25vh 0.85vh palette.$ME-shadow;
+        .submit-button:active {
+            @include button-base;
+            background-color: palette.$submit-active;
+            box-shadow: inset 0.25vh 1vh palette.$submit-shadow;
         }
     }
 }
