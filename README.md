@@ -48,6 +48,10 @@ Experimenting lightly with some primary and secondary colours, I aim to create a
 -   Function to reset the entire display both input and display
 -   Function to clear the input
 
+### Still to do: 
+- Add testing 
+- Fix horizontal overflow for mobile display 
+
 ### Extras
 
 -   Add numbers and punctuation into the Morse Code/Eng directory
