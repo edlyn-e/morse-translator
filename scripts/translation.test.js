@@ -29,9 +29,11 @@ describe("Test cases for translation function from Eng to Morse", () => {
         );
     });
 
-    test("should return translation of Eng-Latin letters", () => {
-        expect(morseToEng(".... . .-.. .-.. --- | .-- --- .-. .-.. -..")).toBe(
-            "hello world",
+    test("should not translate english to morse", () => {
+        expect(() => {
+            morseToEng("hello", "world");
+        }).toThrow(
+            new Error("Sorry, your input has to be in Morse characters"),
         );
     });
 });

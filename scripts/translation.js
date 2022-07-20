@@ -62,7 +62,7 @@ export const engToMorse = (engString) => {
         engString.startsWith("-") ||
         engString.startsWith("|")
     ) {
-        return Error("sorry, your input has to be in Eng-Latin letters");
+        throw Error("sorry, your input has to be in Eng-Latin letters");
     } else {
         return engString
             .toUpperCase()
@@ -83,9 +83,7 @@ export const morseToEng = (morseString) => {
             if (alphabet[character]) {
                 return alphabet[character];
             } else {
-                return new Error(
-                    "Sorry, your input has to be in Morse characters",
-                );
+                throw Error("Sorry, your input has to be in Morse characters");
             }
         })
         .join("")
