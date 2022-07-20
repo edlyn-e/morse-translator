@@ -1,6 +1,3 @@
-import { engToMorse } from "../translation";
-import { translation } from "./translation";
-
 // Testing for English to Morse
 describe("Test cases for translation function from Eng to Morse", () => {
     const notEnglish = new Error("The string needs to have Eng-Latin letters");
