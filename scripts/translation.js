@@ -56,24 +56,13 @@ export const alphabet = {
     "|": " ",
 };
 
-// export const engToMorse = (engString) => {
-//     return engString
-//         .toUpperCase()
-//         .split("")
-//         .map((letter) => {
-//             if (morseCode[letter]) {
-//                 return morseCode[letter];
-//             }
-//         })
-//         .join(" ");
-// };
-
-// /^[\.\-]/.test(engString)) {
-//                 return new Error();
-
 export const engToMorse = (engString) => {
-    if (engString.startsWith("." || "-" || "|", 0)) {
-        return new Error("sorry, your input has to be in Eng-Latin letters");
+    if (
+        engString.startsWith(".") ||
+        engString.startsWith("-") ||
+        engString.startsWith("|")
+    ) {
+        return Error("sorry, your input has to be in Eng-Latin letters");
     } else {
         return engString
             .toUpperCase()
@@ -95,7 +84,7 @@ export const morseToEng = (morseString) => {
                 return alphabet[character];
             } else {
                 return new Error(
-                    "sorry, your input has to be in Morse characters",
+                    "Sorry, your input has to be in Morse characters",
                 );
             }
         })
