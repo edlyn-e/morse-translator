@@ -60,3 +60,6 @@ Experimenting lightly with some primary and secondary colours, I aim to create a
 
 -   Animated typing for the translated text
 -   QWERTY keyboard input on the screen to further add to the "toy" appearance
+
+## The APP
+<img src="./morse.png" />
