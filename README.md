@@ -22,7 +22,7 @@ Project: Morse Code Translator aims to create an application that translates bet
 
 In this section, I break down the project into smaller and manageable tasks to establish metrics to measure my progress on this project. I have also sketched out some ideas to help flesh out the process a little more. This project does not require recreating an image, instead, it affords creative freedom to conjure a design based on my own vision. For this project, I was inspired by an 'Etch a Sketch' and a fun "Gameboy" feel. I sketched some designs (shown below) with some experimental layouts and design elements.
 
-![Morse Code Ideation](https://user-images.githubusercontent.com/107823538/179229511-498580fd-f0d9-48e4-a9e7-29ebb78c232a.png)
+<img src="https://user-images.githubusercontent.com/107823538/179229511-498580fd-f0d9-48e4-a9e7-29ebb78c232a.png"/>
 
 Experimenting lightly with some primary and secondary colours, I aim to create a vibrant and fun application to translate Morse Code and English entries to English and Morse Code respectively.
 
