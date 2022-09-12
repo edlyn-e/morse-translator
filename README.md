@@ -63,3 +63,11 @@ Experimenting lightly with some primary and secondary colours, I aim to create a
 
 ## The APP
 <img src="./morse.png" />
+
+### Running the program
+Open terminal, go to desired location and clone the repo
+`git clone git@github.com:edlyn-e/morse-translator.git` 
+
+Open up index.html in Visual Studio code and hit 'Go Live'
+
+The morse translator now works on your machine
